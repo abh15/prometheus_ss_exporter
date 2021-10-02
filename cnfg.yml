@@ -40,18 +40,18 @@ logic:
     #<<<<<<<<<<<<<<<<<<<<<<<<<<
     # uncomment for usage 
     selection:
-        #process:
-            #pids:
-                #- 200
-                #- 1500
-            #cmds:
-                #- "firefox"
-        #stack:
-            #peers: 
-            #   addresses:
-                #- "8.8.4.4"
-            #   hosts:
-                #- "some.de"
-            #portranges:
-                #- lower: 2000 
-                  #upper: 10000
+        process:
+            pids:
+                - 200
+                - 1500
+            cmds:
+                - "firefox"
+        stack:
+            peers: 
+              addresses:
+                - "8.8.4.4"
+              hosts:
+                - "some.de"
+            portranges:
+                - lower: 2000 
+                  upper: 10000
