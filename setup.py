@@ -1,8 +1,9 @@
+#!/usr/bin/python3
 from setuptools import setup, find_packages
 
 setup(
     name='prometheus-ss-exporter',
-
+    python_requires='>3.5.2',
     version='1.0.0',
 
     description='prometheus socket statistics exporter',
@@ -16,7 +17,6 @@ setup(
 
     classifiers=[
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
     ],
 
@@ -34,10 +34,10 @@ setup(
     packages=find_packages(),
 
     install_requires=[
-        'pyroute2',
+        'pyroute2=0.5.10',
         'prometheus-client',
-        'PyYAML',
-        'psutil'
+        'PyYAML==5.1.1',
+        'psutil==5.6.2'
     ],
 
     entry_points={

@@ -66,7 +66,7 @@ def setup_args():
         required=False,
         type=int,
         help='Listen to this port',
-        default=8020
+        default=9100
     )
     parser.add_argument(
         '-c', '--cnfg',
